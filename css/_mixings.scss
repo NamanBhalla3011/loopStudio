@@ -1,0 +1,36 @@
+
+@mixin container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@mixin flex-prop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin nav-styling {
+    li {
+        list-style: none;
+        margin-right: 2rem;
+        &:last-child {
+          margin-right: 0;
+        }
+        a {
+          color: $White;
+          text-decoration: none;
+          font-family: $heading-font;
+        }
+      }
+}
+
+@mixin nav-hover {
+    li{
+        a:hover{
+            border-bottom: 1px solid white;
+        }
+    }
+    
+}

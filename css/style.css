@@ -1,0 +1,446 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+html {
+  font-size: 15px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Josefin sans, open-sans;
+}
+
+p {
+  font-family: Alata, open-sans;
+  color: #8c8c8c;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: 100;
+  line-height: 1.2;
+  color: white;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 100;
+  line-height: 1.2;
+}
+
+header {
+  padding: 3rem 2rem;
+  z-index: 5;
+}
+
+header .container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .container .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .container .nav-links li {
+  list-style: none;
+  margin-right: 2rem;
+}
+
+header .container .nav-links li:last-child {
+  margin-right: 0;
+}
+
+header .container .nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-family: Alata, open-sans;
+}
+
+header .container .nav-links li a:hover {
+  border-bottom: 1px solid white;
+}
+
+section#banner {
+  background-image: url("../images/desktop/image-hero.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  margin-top: -8.2rem;
+  z-index: -1;
+}
+
+section#banner .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 12rem 2rem 8rem 2rem;
+}
+
+section#banner .overlay .container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+section#banner .overlay .container .intro {
+  border: 2px solid white;
+  padding: 3rem;
+  width: 60%;
+}
+
+section#textimg .container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4rem 2rem;
+}
+
+section#textimg .container .img {
+  background-image: url("../images/desktop/image-interactive.jpg");
+  height: 30rem;
+  width: 75%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+section#textimg .container .text {
+  width: 50%;
+  background-color: white;
+  padding: 5rem;
+  margin-left: -15rem;
+  margin-top: 15rem;
+}
+
+section#textimg .container .text h2 {
+  text-transform: uppercase;
+}
+
+section#textimg .container .text p {
+  padding-top: 1.5rem;
+  line-height: 1.5;
+}
+
+section#creations {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 2rem 4rem 2rem;
+}
+
+section#creations .creation-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-transform: uppercase;
+}
+
+section#creations .creation-button .button-styling {
+  border: 2px solid black;
+  padding: 0.5rem 2.5rem;
+  letter-spacing: 0.6rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Alata, open-sans;
+  color: black;
+  font-weight: 700;
+}
+
+section#gallery .container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+section#gallery .container .line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 2rem;
+}
+
+section#gallery .container .line .bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-left: 2rem;
+  height: 35rem;
+  width: 30%;
+}
+
+section#gallery .container .line .bg p {
+  text-transform: uppercase;
+  color: white;
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: Josefin sans, open-sans;
+  padding: 2rem 1rem;
+}
+
+section#gallery .container .line .bg:nth-child(1) {
+  margin-left: 0;
+}
+
+section#gallery .container .line .img1 {
+  background-image: url("../images/desktop/image-deep-earth.jpg");
+  background-size: cover;
+}
+
+section#gallery .container .line .img2 {
+  background-image: url("../images/desktop/image-night-arcade.jpg");
+  background-size: cover;
+}
+
+section#gallery .container .line .img3 {
+  background-image: url("../images/desktop/image-soccer-team.jpg");
+  background-size: cover;
+}
+
+section#gallery .container .line .img4 {
+  background-image: url("../images/desktop/image-grid.jpg");
+  background-size: cover;
+}
+
+section#gallery .container .line .img5 {
+  background-image: url("../images/desktop/image-from-above.jpg");
+  background-size: cover;
+}
+
+section#gallery .container .line .img6 {
+  background-image: url("../images/desktop/image-pocket-borealis.jpg");
+  background-size: cover;
+}
+
+section#gallery .container .line .img7 {
+  background-image: url("../images/desktop/image-curiosity.jpg");
+  background-size: cover;
+}
+
+section#gallery .container .line .img8 {
+  background-image: url("../images/desktop/image-fisheye.jpg");
+  background-size: cover;
+}
+
+footer#footer .container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: black;
+  padding: 2rem 2rem;
+}
+
+footer#footer .container .logo-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer#footer .container .logo-icon .logo-img {
+  width: 12rem;
+  height: auto;
+}
+
+footer#footer .container .logo-icon .social a {
+  margin-left: 1rem;
+}
+
+footer#footer .container .logo-icon .social a img {
+  width: 1.6rem;
+}
+
+footer#footer .container .logo-icon .social a:nth-child(1) {
+  margin-left: 0;
+}
+
+footer#footer .container .navs-copyright {
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer#footer .container .navs-copyright .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer#footer .container .navs-copyright .nav-links li {
+  list-style: none;
+  margin-right: 2rem;
+}
+
+footer#footer .container .navs-copyright .nav-links li:last-child {
+  margin-right: 0;
+}
+
+footer#footer .container .navs-copyright .nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-family: Alata, open-sans;
+}
+
+footer#footer .container .navs-copyright p {
+  color: dimgray;
+}
+
+footer#footer .container .myinfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 656px) and (max-width: 1080px) {
+  html {
+    font-size: 10px;
+  }
+  section#banner {
+    background-image: url("../images/desktop/image-hero.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    margin-top: -9.2rem;
+  }
+}
+
+@media (min-width: 378px) and (max-width: 655px) {
+  html {
+    font-size: 8px;
+  }
+  section#banner {
+    background-image: url("../images/desktop/image-hero.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    margin-top: -9.9rem;
+  }
+}
+
+@media screen and (max-width: 377px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+    width: 100%;
+  }
+  header,
+  section,
+  footer {
+    display: none;
+  }
+  body::before {
+    background-image: url("../images/comingsoon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: " ";
+    height: 150px;
+    width: 80%;
+  }
+  body::after {
+    content: "Thanks for your patience ";
+    font-size: 25px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

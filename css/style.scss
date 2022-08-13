@@ -1,0 +1,283 @@
+@import "mixings";
+@import "variables";
+
+html {
+  font-size: 15px;
+  // background-color: lightcyan;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $para-font;
+}
+p {
+  font-family: $heading-font;
+  color: $Dark;
+}
+h1 {
+  font-size: 4.5rem;
+  font-weight: 100;
+  line-height: 1.2;
+  color: $White;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 3rem;
+  font-weight: 100;
+  line-height: 1.2;
+}
+
+header {
+  padding: 3rem 2rem;
+  z-index: 5;
+  .container {
+    @include container;
+    @include flex-prop;
+    justify-content: space-between;
+
+    .nav-links {
+      @include flex-prop;
+      @include nav-styling;
+      @include nav-hover
+    }
+  }
+}
+
+section#banner {
+  background-image: url("../images/desktop/image-hero.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  margin-top: -8.2rem;
+  z-index: -1;
+  .overlay {
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    padding: 12rem 2rem 8rem 2rem;
+    .container {
+      @include container;
+      .intro {
+        border: 2px solid white;
+        padding: 3rem;
+        width: 60%;
+      }
+    }
+  }
+}
+
+section#textimg {
+  .container {
+    @include container;
+    @include flex-prop;
+    padding: 4rem 2rem;
+    .img {
+      background-image: url("../images/desktop/image-interactive.jpg");
+      height: 30rem;
+      width: 75%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .text {
+      width: 50%;
+      background-color: $White;
+      padding: 5rem;
+      margin-left: -15rem;
+      margin-top: 15rem;
+      h2 {
+        text-transform: uppercase;
+      }
+      p {
+        padding-top: 1.5rem;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+section#creations {
+  // background-color: antiquewhite;
+  @include container;
+  padding: 1rem 2rem 4rem 2rem;
+  .creation-button {
+    @include flex-prop;
+    justify-content: space-between;
+    text-transform: uppercase;
+    .button-styling {
+      border: 2px solid $Black;
+      padding: 0.5rem 2.5rem;
+      letter-spacing: 0.6rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-family: $heading-font;
+      color: $Black;
+      font-weight: 700;
+    }
+  }
+}
+
+section#gallery {
+  .container {
+    @include container;
+    padding: 0 2rem;
+    .line {
+      @include flex-prop;
+      padding-bottom: 2rem;
+
+      .bg {
+        @include flex-prop;
+        align-items: flex-end;
+        margin-left: 2rem;
+        height: 35rem;
+        width: 30%;
+
+        p {
+          text-transform: uppercase;
+          color: $White;
+          font-size: 2rem;
+          font-weight: 300;
+          font-family: $para-font;
+          padding: 2rem 1rem;
+        }
+      }
+      .bg:nth-child(1) {
+        margin-left: 0;
+      }
+      .img1 {
+        background-image: url("../images/desktop/image-deep-earth.jpg");
+        background-size: cover;
+      }
+      .img2 {
+        background-image: url("../images/desktop/image-night-arcade.jpg");
+        background-size: cover;
+      }
+      .img3 {
+        background-image: url("../images/desktop/image-soccer-team.jpg");
+        background-size: cover;
+      }
+      .img4 {
+        background-image: url("../images/desktop/image-grid.jpg");
+        background-size: cover;
+      }
+      .img5 {
+        background-image: url("../images/desktop/image-from-above.jpg");
+        background-size: cover;
+      }
+      .img6 {
+        background-image: url("../images/desktop/image-pocket-borealis.jpg");
+        background-size: cover;
+      }
+      .img7 {
+        background-image: url("../images/desktop/image-curiosity.jpg");
+        background-size: cover;
+      }
+      .img8 {
+        background-image: url("../images/desktop/image-fisheye.jpg");
+        background-size: cover;
+      }
+    }
+  }
+}
+
+footer#footer {
+  .container {
+    @include container;
+    background-color: black;
+    padding: 2rem 2rem;
+    .logo-icon {
+      @include flex-prop;
+      justify-content: space-between;
+      .logo-img {
+        width: 12rem;
+        height: auto;
+      }
+      .social {
+        a {
+          margin-left: 1rem;
+          img {
+            width: 1.6rem;
+          }
+        }
+        a:nth-child(1) {
+          margin-left: 0;
+        }
+      }
+    }
+    .navs-copyright {
+      margin: 1rem 0;
+      @include flex-prop;
+      justify-content: space-between;
+      .nav-links {
+        @include nav-styling;
+        @include flex-prop;
+      }
+      p {
+        color: $VeryDark;
+      }
+    }
+
+    .myinfo {
+      @include flex-prop;
+    }
+  }
+}
+
+// MEDIA QUERY FOR TABLET
+@media (min-width: 656px) and (max-width: 1080px) {
+  html {
+    font-size: 10px;
+  }
+  section#banner {
+    background-image: url("../images/desktop/image-hero.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    margin-top: -9.2rem;
+  }
+}
+
+@media (min-width: 378px) and (max-width: 655px) {
+  html {
+    font-size: 8px;
+  }
+  section#banner {
+    background-image: url("../images/desktop/image-hero.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    margin-top: -9.9rem;
+  }
+}
+// MEDIA QUERY FOR MOBILE
+@media screen and (max-width: 377px) {
+  body {
+    @include flex-prop;
+    flex-direction: column;
+    // background-color: blanchedalmond;
+    height: 100vh;
+    width: 100%;
+  }
+  header,
+  section,
+  footer {
+    display: none;
+  }
+  body::before {
+    background-image: url("../images/comingsoon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: " ";
+    height: 150px;
+    width: 80%;
+  }
+
+  body::after {
+    content: "Thanks for your patience ";
+    font-size: 25px;
+  }
+}
