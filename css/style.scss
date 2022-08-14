@@ -242,7 +242,7 @@ footer#footer {
   }
 }
 
-@media (min-width: 378px) and (max-width: 655px) {
+@media (min-width: 401px) and (max-width: 655px) {
   html {
     font-size: 8px;
   }
@@ -254,7 +254,7 @@ footer#footer {
   }
 }
 // MEDIA QUERY FOR MOBILE
-@media screen and (max-width: 377px) {
+@media screen and (max-width: 400px) {
   body {
     @include flex-prop;
     flex-direction: column;
